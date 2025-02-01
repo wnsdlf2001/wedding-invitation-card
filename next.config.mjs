@@ -2,8 +2,8 @@
 const nextConfig = {
   output: "export",
   reactStrictMode: true,
-  basePath: '/wedding-invitation-card',
-  assetPrefix: '/wedding-invitation-card/'
+  //basePath: '/wedding-invitation-card',
+  //assetPrefix: '/wedding-invitation-card/'
 
 };
 
