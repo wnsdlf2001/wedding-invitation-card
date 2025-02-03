@@ -138,7 +138,7 @@ interface GuestbookMessage {
     hashedPassword: string;
 }
 
-const ADMIN_PASSWORD = "admin1";
+const ADMIN_PASSWORD = "admin531";
 const ADMIN_HASH = crypto.SHA256(ADMIN_PASSWORD).toString();
 
 export default function Guestbook() {

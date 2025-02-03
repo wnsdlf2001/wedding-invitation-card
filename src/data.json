@@ -1,38 +1,38 @@
 {
-  "date": "2025년 8월 23일, 토요일 오전 11시 30분",
-  "location": "더 세인트 웨딩, 6F 그랜드볼룸 홀",
-  "gretting": "서로 마주 보며 다져온 사랑을\n이제 함께 한곳을 바라보며 걸어갈 수 있는\n큰 사랑으로 키우고자 합니다.\n저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게\n앞날을 축복해 주시면 감사하겠습니다.",
+  "date": "결혼식을 진행할 날짜 ",
+  "location": "장소 설명)",
+  "gretting": "축사 내용",
   "groom": {
-    "name": "윤준일",
-    "account_number": "카카오뱅크 3333-23-6348757",
+    "name": "이름 비공개",
+    "account_number": "○○ 은행 계좌 정보로 비식별화",
     "parents": {
       "mother": {
-        "name": "홍경희",
+        "name": "이름 숨김",
         "account_number": "○○은행 ***-***-******"
       },
       "father": {
-        "name": "윤영철",
+        "name": "이름 숨김",
         "account_number": "○○은행 ***-***-******"
       }
     }
   },
   "bride": {
-    "name": "김수연",
+    "name": "이름 비공개",
     "account_number": "○○은행 ***-***-******",
     "parents": {
       "mother": {
-        "name": "곽지숙",
+        "name": "이름 숨김",
         "account_number": "○○은행 ***-***-******"
       },
       "father": {
-        "name": "김덕남",
+        "name": "이름 숨김",
         "account_number": "○○은행 ***-***-******"
       }
     }
   },
   "kakaotalk": {
-    "api_token": "6fa581589cfd9173e9609b951a70ea7a",
-    "wedding_invitation_url": "https://wnsdlf2001.github.io/wedding-invitation-card",
-    "share_image": "https://wnsdlf2001.github.io/wedding-invitation-card/assets/main.jpg"
+    "api_token": "토큰을 환경변수에서 로드할 계획",
+    "wedding_invitation_url": "https://테스트URL",
+    "share_image": "https://테스트이미지URL"
   }
 }
