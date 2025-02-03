@@ -1,13 +1,44 @@
+/* html, body 초기화 */
 html,
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px; /* 폰트 크기 고정 */
+  line-height: 1.5;
+  height: auto; /* 오직 자동 조정 */
+  -webkit-text-size-adjust: 100%; /* iOS 인앱 브라우저 글자 크기 변경 방지 */
+  text-size-adjust: 100%; /* 일반적인 텍스트 크기 조정 방지 */
+  overflow-x: hidden; /* 가로 스크롤 차단 */
+  overflow-y: auto; /* 세로 스크롤 가능 */
+  -webkit-overflow-scrolling: touch; /* iOS 스크롤 부드럽게 */
+}
+
+
+
+main {
+  display: block;
+  width: 100%;
+  overflow: auto; /* 명시적으로 자동 스크롤 활성화 */
 }
 
 * {
-  font-family: 'Noto Serif KR', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  box-sizing: border-box; /* 모든 요소에 박스 모델 적용*/
+}
+
+
+body.kakaotalk-visible {
+  font-size: 16px !important; /* 강제로 동일 폰트 크기 유지 */
+  -webkit-text-size-adjust: 100%; /* 스크롤 중 글자 크기 변화 방지 */
+  text-size-adjust: 100%; /* 텍스트 크기 변화 방지 */
+}
+
+
+* {
+  font-family: 'BMJUA', 'Noto Serif KR', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 @keyframes fadein {
@@ -44,4 +75,24 @@ body {
   to {
     opacity: 1;
   }
+}
+@font-face {
+  font-family: 'NanumBarunGothic';
+  src: url('/public/fonts/NanumBarunGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothicBold';
+  src: url('/public/fonts/NanumBarunGothicBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('/wedding-invitation-card/fonts/BMJUA_ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

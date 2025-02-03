@@ -8,14 +8,14 @@ const Wrapper = styled("div", {
 });
 
 const Title = styled("p", {
-  fontSize: "2vh",
+  fontSize: "150%",
   fontWeight: "bold",
   opacity: 0.85,
   marginBottom: 0,
 });
 
 const Content = styled("div", {
-  fontSize: "1.75vh",
+  fontSize: "100%",
   lineHeight: 1.75,
   opacity: 0.75,
   marginBottom: 16,
@@ -24,13 +24,31 @@ const Content = styled("div", {
 });
 
 const GroomBride = styled("p", {
-  fontSize: "1.75vh",
+  fontSize: "120%",
   lineHeight: 1.75,
   opacity: 0.85,
   marginBottom: 0,
   width: "100%",
   textAlign: "center",
 });
+
+const BoldText = styled("span", {
+  fontWeight: "",
+  opacity: 1,
+});
+
+const SmallText = styled("span", {
+  fontSize: "75%", // 작은 크기로 설정
+  opacity: 0.65, // 강조도를 낮춤
+});
+
+const StyledDot = styled("span", {
+  fontFamily: "Arial, sans-serif", // 산세리프 폰트 적용
+  fontSize: "100%", // 방점 크기 조절 (텍스트와 동일)
+  margin: "0 0px", // 방점 주변 간격 설정
+  lineHeight: 1, // 세로 정렬 시 추가 간격 방지
+});
+
 
 type GrettingProps = {
   data?: Data;
@@ -53,12 +71,27 @@ export default function Gretting({ data }: GrettingProps) {
         })}
       </Content>
       <GroomBride>
-        {data?.groom?.parents?.father?.name} ·{" "}
-        {data?.groom?.parents?.mother?.name}의 장남 {data?.groom?.name}
+        <BoldText>
+          {data?.groom?.parents?.father?.name}
+        </BoldText>
+        <StyledDot>・</StyledDot>
+        <BoldText>
+          {data?.groom?.parents?.mother?.name}
+        </BoldText>
+        <SmallText> 의 장남 </SmallText>
+        <BoldText>{data?.groom?.name}</BoldText>
         <br />
-        {data?.bride?.parents?.father?.name} ·{" "}
-        {data?.bride?.parents?.mother?.name}의 장녀 {data?.bride?.name}
+        <BoldText>
+          {data?.bride?.parents?.father?.name}
+        </BoldText>
+        <StyledDot>・</StyledDot>
+        <BoldText>
+          {data?.bride?.parents?.mother?.name}
+        </BoldText>
+        <SmallText> 의 장녀 </SmallText>
+        <BoldText>{data?.bride?.name}</BoldText>
       </GroomBride>
+
     </Wrapper>
   );
 }
